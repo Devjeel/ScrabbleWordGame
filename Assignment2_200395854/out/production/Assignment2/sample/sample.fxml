@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="536.0" prefWidth="492.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Label fx:id="errorBox" layoutX="86.0" layoutY="221.0" minHeight="16" minWidth="69" prefHeight="26.0" prefWidth="330.0" textFill="#ff0606" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <Button layoutX="428.0" layoutY="266.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="P" />
+        <Button layoutX="384.0" layoutY="266.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="O" />
+        <Button layoutX="341.0" layoutY="266.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="I" />
+        <Button layoutX="298.0" layoutY="266.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="U" />
+        <Button layoutX="256.0" layoutY="266.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="Y" />
+        <Button layoutX="213.0" layoutY="266.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="T" />
+        <Button layoutX="169.0" layoutY="266.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="R" />
+        <Button layoutX="82.0" layoutY="266.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="W" />
+        <Button layoutX="39.0" layoutY="266.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="Q">
+         <effect>
+            <Blend />
+         </effect></Button>
+        <Button layoutX="126.0" layoutY="266.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="E" />
+        <Button layoutX="231.0" layoutY="371.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="V" />
+        <Button layoutX="410.0" layoutY="317.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="L" />
+        <Button layoutX="366.0" layoutY="317.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="K" />
+        <Button layoutX="323.0" layoutY="317.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="J" />
+        <Button layoutX="280.0" layoutY="317.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="H" />
+        <Button layoutX="57.0" layoutY="317.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="A" />
+        <Button layoutX="100.0" layoutY="317.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="S" />
+        <Button layoutX="143.0" layoutY="317.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="D" />
+        <Button layoutX="187.0" layoutY="317.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="F" />
+        <Button layoutX="231.0" layoutY="317.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="G" />
+        <Button layoutX="325.0" layoutY="371.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="N" />
+        <Button layoutX="280.0" layoutY="371.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="B" />
+        <Button layoutX="100.0" layoutY="371.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="Z" />
+        <Button layoutX="144.0" layoutY="371.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="X" />
+        <Button layoutX="187.0" layoutY="371.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="C" />
+        <Button layoutX="366.0" layoutY="371.0" mnemonicParsing="false" onAction="#keyButton" prefHeight="18.0" prefWidth="36.0" text="M" />
+        <TextField fx:id="wordInputBox" disable="true" layoutX="84.0" layoutY="185.0" prefHeight="26.0" prefWidth="330.0" promptText="Please input your word" />
+        <Button layoutX="224.0" layoutY="434.0" mnemonicParsing="false" onAction="#submitButton" prefHeight="26.0" prefWidth="86.0" text="Submit" />
+        <Button fx:id="previousWordButton" layoutX="38.0" layoutY="484.0" mnemonicParsing="false" onAction="#setPreviousWordButton" prefHeight="26.0" prefWidth="110.0" text="Previous Words" />
+        <Label layoutX="69.0" layoutY="86.0" prefHeight="36.0" prefWidth="241.0" text="Scrabble Word Game" textAlignment="CENTER">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Label fx:id="totalScoreLabel" layoutX="353.0" layoutY="140.0" prefHeight="26.0" prefWidth="54.0" text="0" textAlignment="CENTER" />
+        <Label layoutX="53.0" layoutY="293.0" text="10" />
+        <Label layoutX="183.0" layoutY="293.0" text="1" />
+        <Label layoutX="227.0" layoutY="293.0" text="1" />
+        <Label layoutX="270.0" layoutY="293.0" text="4" />
+        <Label layoutX="312.0" layoutY="293.0" text="1" />
+        <Label layoutX="355.0" layoutY="293.0" text="1" />
+        <Label layoutX="158.0" layoutY="343.0" text="2" />
+        <Label layoutX="398.0" layoutY="293.0" text="1" />
+        <Label layoutX="442.0" layoutY="293.0" text="3" />
+        <Label layoutX="140.0" layoutY="293.0" text="1" />
+        <Label layoutX="96.0" layoutY="293.0" text="4" />
+        <Label layoutX="337.0" layoutY="343.0" text="8" />
+        <Label layoutX="294.0" layoutY="343.0" text="4" />
+        <Label layoutX="245.0" layoutY="343.0" text="2" />
+        <Label layoutX="201.0" layoutY="343.0" text="4" />
+        <Label layoutX="114.0" layoutY="343.0" text="1" />
+        <Label layoutX="71.0" layoutY="343.0" text="1" />
+        <Label layoutX="424.0" layoutY="343.0" text="1" />
+        <Label layoutX="380.0" layoutY="343.0" text="5" />
+        <Label layoutX="114.0" layoutY="403.0" text="10" />
+        <Label layoutX="158.0" layoutY="403.0" text="8" />
+        <Label layoutX="380.0" layoutY="403.0" text="3" />
+        <Label layoutX="340.0" layoutY="403.0" text="1" />
+        <Label layoutX="294.0" layoutY="403.0" text="3" />
+        <Label layoutX="202.0" layoutY="403.0" text="3" />
+        <Label layoutX="245.0" layoutY="403.0" text="4" />
+        <Label layoutX="287.0" layoutY="144.0" prefHeight="18.0" prefWidth="67.0" text="Total Score:" />
+      <TextArea fx:id="previousWordBox" editable="false" layoutX="162.0" layoutY="469.0" prefHeight="55.0" prefWidth="307.0" promptText="Click on the Previous word Button to show previous words" />
+    </children>
+</AnchorPane>
